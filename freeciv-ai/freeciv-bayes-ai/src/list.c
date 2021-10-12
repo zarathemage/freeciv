@@ -25,16 +25,5 @@ DataPtr search_list(Data d, ListPtr lp)
 		return lp->data;
 }
  
-// Bayes methods
-
-double sum(ListPtr lp)
-{
-	double sum = 0.0;
-
-	while (lp->next != NULL) 
-		sum += (double)*(lp->data);
-
-	return sum;
-}
 
 	

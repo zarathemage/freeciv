@@ -3,6 +3,7 @@ CC=gcc
 OBJS= list.o \
 	population.o \
 	bayes.o \
+	genome.o \
 
 all: $(OBJS)
 	### $(CC) -shared fc-bayes-ai-.so $(OBJS)

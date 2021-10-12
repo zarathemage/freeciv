@@ -1,5 +1,7 @@
 #include "population.h"
 
+#include<stdlib.h>
+
 void make_population(PopulationPtr pp)
 {
 	make_list(pp->pop);
@@ -9,6 +11,23 @@ void make_population(PopulationPtr pp)
 void add_to_population(Data d, PopulationPtr pp)
 {
 	add_to_list(d, pp->pop);
+	
+	pp->count ++;
+}
+
+double population_sum(PopulationPtr pp)
+{
+	double sum = 0.0;
+
+	while (pp->pop->next != NULL) 
+		sum += (double)*(pp->pop->data);
+
+	return sum;
+}
+
+double population_estimate(PopulationPtr pp)
+{
+	return population_sum(pp) / pp->count;
 }
 
 

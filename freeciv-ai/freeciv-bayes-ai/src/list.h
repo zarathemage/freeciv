@@ -15,7 +15,4 @@ void add_to_list(Data d, ListPtr lp);
 
 DataPtr search_list(Data d, ListPtr lp);
 
-// Bayes methods
-
-double sum(ListPtr lp);
 

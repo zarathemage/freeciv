@@ -1,3 +1,3 @@
 #include "population.h"
 
-double Bayes(double Pba, double Pb, PopulationPtr lp);
+double population_bayes(double Pba, double Pb, PopulationPtr pp);
