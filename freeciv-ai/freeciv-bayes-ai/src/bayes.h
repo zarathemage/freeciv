@@ -1,3 +1,3 @@
 #include "population.h"
 
-double population_bayes(double Pba, double Pb, PopulationPtr pp);
+double population_bayesian_inference(double Pba, double Pa, PopulationPtr pp);

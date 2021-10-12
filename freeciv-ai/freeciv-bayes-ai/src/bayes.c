@@ -1,7 +1,7 @@
 #include "bayes.h"
 
-double population_bayes(double Pba, double Pb, PopulationPtr pp)
+double population_bayesian_inference(double Pba, double Pa, PopulationPtr pp)
 {
-	return Pba*Pb / population_sum(pp);	
+	return Pba*Pa / population_sum(pp);	
 }
 
