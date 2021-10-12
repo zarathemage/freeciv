@@ -30,4 +30,16 @@ double population_estimate(PopulationPtr pp)
 	return population_sum(pp) / pp->count;
 }
 
+double population_max(PopulationPtr pp)
+{
+	double max = -2.0; // NOTE - inf
+	
+	while (pp->pop->next != NULL) {
+		if (*(pp->pop->data) >= max)
+			max = (double)*(pp->pop->data);
+	}
+	
+	return max;
+}	
+	
 

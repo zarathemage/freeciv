@@ -15,4 +15,5 @@ void add_to_population(Data d, PopulationPtr pp);
 
 double population_sum(PopulationPtr pp);
 double population_estimate(PopulationPtr pp);
+double population_max(PopulationPtr pp);
 
