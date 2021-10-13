@@ -15,6 +15,16 @@ void add_to_list(Data d, ListPtr lp)
 	lp->next = lp2;
 }
 
+void add_to_list_back(Data d, ListPtr lp)
+{
+	while (lp->next != NULL)
+		lp = lp->next;
+	
+	*(lp->data) = d;
+	lp->next = NULL;
+	
+}
+
 DataPtr search_list(Data d, ListPtr lp)
 {
 	while (lp->next != NULL && *(lp->data) != d)
